@@ -1,2 +1,3 @@
 # ejemplov8
-ejemplo de git
+ejemplo de uso de git
+esto es solo un ejemplo
