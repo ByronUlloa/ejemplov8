@@ -21,3 +21,24 @@ class Migration(migrations.Migration):
             ],
         ),
     ]
+
+import django.db.models.deletion
+        migrations.CreateModel(
+            name='Marca',
+            fields=[
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('nombre', models.CharField(max_length=50)),
+            ],
+        ),
+        migrations.CreateModel(
+            fields=[
+            name='Producto',
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('nombre', models.CharField(max_length=50)),
+                ('precio', models.IntegerField()),
+                ('descripcion', models.TextField()),
+                ('stock', models.IntegerField()),
+                ('marca', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='app.marca')),
+            ],
+        ),
+    ]

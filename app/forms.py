@@ -1,3 +1,13 @@
+from dataclasses import field, fields
+from pyexpat import model
+from django import forms
+from .models import Producto
+
+class ProductoForm(forms.ModelForm):
+
+    class Meta:
+        model = Producto
+        fields = '__all__'
 from django import forms
 from .models import Persona, PerfilUsuario
 from django.contrib.auth.forms import UserCreationForm
