@@ -1,0 +1,24 @@
+{% extends 'app/base.html' %} {% load static %} {% block css %}
+<link href="{% static 'app/css/styles.css' %}" rel="stylesheet"> {% endblock%} {% load static %} {% block contenido %}
+<div class="slider">
+    <div>
+        <img src="{% static 'app/images/banner1.png' %}" alt="">
+    </div>
+    <div></div>
+    <div></div>
+
+
+</div>
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 font-weight-normal">Los Mejores Productos Para tu Mascota</h1>
+        <p class="lead font-weight-normal">20% de Decuento con tu Suscripcion</p>
+        <a class="btn btn-outline-secondary" href="{% url 'Suscripcion' %}">OBTEN TU DESCUENTO</a>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+</div>
+
+
+{% endblock contenido %}

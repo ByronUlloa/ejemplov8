@@ -1,0 +1,40 @@
+{% extends 'app/base.html' %} {% load static %} {% block css %}
+<link href="{% static 'app/css/Styles.css' %}" rel="stylesheet"> {% endblock %} {% block contenido %}
+
+
+<section class="showcase">
+    <div class="video-container">
+        <video src="{% static 'app/images/Cachorritos.mp4' %}" autoplay muted loop></video>
+    </div>
+    <div class="content">
+        <h1>FRCA</h1>
+        <h3>Fundacion por el Respeto y Cuidado Animal</h3>
+        <a href="#about" class="btn1">Leer más</a>
+    </div>
+</section>
+
+<section id="about">
+    <h1>Quiénes Somos</h1>
+    <p>
+        Somos una tienda de productos para mascotas como bandanas, correas e identificaciones, todo esto para ayudar a fundaciones sin fines de lucro que nace el año 2022 todo partió a través de las redes sociales con el propósito de dar solución a la problemática
+        de Bienestar Animal
+    </p>
+    <h2>Nuestro Propósito</h2>
+    <p>
+        Contribuimos a crear un mundo mejor, ayudando a amar y proteger a sus mascotas. Basados en nuestro equipo de trabajo somos solidarios socialmente,
+        <br> brindando la mayor cantidad de trabajo posible, innovando constantemente y logrando un prestigio que nos haga perdurar en el tiempo.
+        <br> invirtiendo e innovando en proyectos para ampliar la estructura y seguir creciendo en otras ciudades. Aportando y participando solidariamente para crear una comunidad inclusiva y el cuidado del medio ambiente.
+    </p>
+    <br>
+
+    <h3>Danos Tu Ayuda <br>
+        <h5>La felicidad que se merece tu mascota</h5>
+    </h3>
+    <br>
+    <div class="Social">
+        <a href="{% url 'Suscripcion' %}" target="_blank"><i class="fa-solid fa-shield-dog fa-5x"></i></a>
+    </div>
+
+</section>
+
+{% endblock contenido %}

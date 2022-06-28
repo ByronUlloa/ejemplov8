@@ -1,0 +1,85 @@
+ {% load static %} {% block contenido %}
+<link href="{% static 'app/css/formpago.css' %}" rel="stylesheet">
+
+<div class="container">
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Formulario</h3>
+
+                <div class="inputBox">
+                    <span>Nombre Completo :</span>
+                    <input type="text" placeholder="Wacoldo God">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="Wacoldo@duocuc.cl">
+                </div>
+                <div class="inputBox">
+                    <span>Dirección :</span>
+                    <input type="text" placeholder="Paicavi 458">
+                </div>
+                <div class="inputBox">
+                    <span>Ciudad :</span>
+                    <input type="text" placeholder="Concepción">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>País :</span>
+                        <input type="text" placeholder="Chile">
+                    </div>
+                    <div class="inputBox">
+                        <span>Codigo Postal :</span>
+                        <input type="text" placeholder="123 456">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">Pago</h3>
+
+                <div class="inputBox">
+                    <span>Tarjetas Aceptadas :</span>
+                    <img src="{% static 'app/images/card_img.png' %}" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>Nombre de Tarjeta :</span>
+                    <input type="text" placeholder="Walcodo Del Cacho">
+                </div>
+                <div class="inputBox">
+                    <span>Numero de Tarjeta :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>EXP MES :</span>
+                    <input type="text" placeholder="Julio">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>EXP AÑO :</span>
+                        <input type="number" placeholder="2022">
+                    </div>
+                    <div class="inputBox">
+                        <span>CVV :</span>
+                        <input type="text" placeholder="1234">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <input type="submit" value="Finalizar Pago" class="submit-btn">
+
+    </form>
+
+</div>
+{% endblock %}
